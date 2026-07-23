@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pedro Daguer · Desenvolvedor Backend, RPA e Web</title>
+  <meta name="description" content="Pedro Daguer, desenvolvedor de software com base sólida em backend, estruturação de dados, automação de processos (RPA) e visão computacional. Entrego produtos web completos, da arquitetura à interface." />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Pedro Daguer · Desenvolvedor Backend, RPA e Web" />
+  <meta property="og:description" content="Backend, automação (RPA), visão computacional e produtos web de ponta a ponta." />
+  <meta name="theme-color" content="#0d1b2a" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=JetBrains+Mono:wght@400;500;600&family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css?v=2" />
+</head>
+<body>
+  <!-- Custom cursor -->
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+
+  <!-- Grain + gradient atmosphere -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Progress bar -->
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <a href="#hero" class="nav__brand" data-hover>
+      <span class="nav__mark">PD</span>
+      <span class="nav__name">Pedro Daguer</span>
+    </a>
+    <nav class="nav__links" aria-label="Navegação principal">
+      <a href="#sobre" data-hover><span class="nav__idx">01</span> Sobre</a>
+      <a href="#servicos" data-hover><span class="nav__idx">02</span> Serviços</a>
+      <a href="#trajetoria" data-hover><span class="nav__idx">03</span> Trajetória</a>
+      <a href="#contato" data-hover><span class="nav__idx">04</span> Contato</a>
+    </nav>
+    <a href="#contato" class="btn btn--ghost nav__cta" data-hover>Iniciar projeto</a>
+    <button class="nav__burger" id="burger" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <a href="#sobre"><span>01</span> Sobre</a>
+    <a href="#servicos"><span>02</span> Serviços</a>
+    <a href="#trajetoria"><span>03</span> Trajetória</a>
+    <a href="#contato"><span>04</span> Contato</a>
+    <div class="mobile-menu__foot">
+      <a href="https://github.com/pedrodaguer" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/pedrodaguer" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <canvas class="hero__canvas" id="net" aria-hidden="true"></canvas>
+      <div class="hero__inner">
+        <p class="hero__eyebrow reveal">
+          <span class="dot"></span> Backend · RPA · Automação · Web
+        </p>
+        <h1 class="hero__title">
+          <span class="reveal">Construo software</span>
+          <span class="reveal">de ponta a ponta:</span>
+          <span class="hero__rotator reveal">
+            <span class="hero__static">do dado ao</span>
+            <span class="rotator" id="rotator" aria-hidden="true"><span>pixel</span></span>
+          </span>
+        </h1>
+        <p class="hero__lead reveal">
+          Sou Pedro Daguer, desenvolvedor com base forte em backend, automação de processos
+          (RPA) e integrações via API. Combino engenharia de verdade com a capacidade de
+          entregar produtos web completos, da ideia à interface final.
+        </p>
+        <div class="hero__cta reveal">
+          <a href="#trajetoria" class="btn btn--solid" data-hover>
+            Ver meu trabalho
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="#contato" class="btn btn--ghost" data-hover>Iniciar um projeto</a>
+        </div>
+        <ul class="hero__meta reveal">
+          <li><strong>2022</strong><span>na estrada da tecnologia</span></li>
+          <li><strong>End to end</strong><span>backend · dados · web</span></li>
+          <li><strong>BPMN</strong><span>pipelines em produção</span></li>
+        </ul>
+      </div>
+      <a href="#sobre" class="hero__scroll" aria-label="Rolar para baixo" data-hover>
+        <span>scroll</span>
+        <span class="hero__scroll-line"></span>
+      </a>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="section sobre" id="sobre">
+      <div class="section__head reveal">
+        <span class="section__idx">01 / Sobre</span>
+        <h2 class="section__title">Uma base de engenharia,<br />uma entrega de produto.</h2>
+      </div>
+
+      <div class="sobre__grid">
+        <div class="sobre__bio reveal">
+          <p class="sobre__lead">
+            Desenvolvedor backend e de RPA em formação contínua, com dupla base acadêmica em
+            computação. Gosto de transformar processos confusos em software simples e confiável.
+          </p>
+          <p>
+            Minha trajetória é acadêmica e prática ao mesmo tempo: comecei em Ciência da
+            Computação na UNIVALI (Brasil) e sigo em Engenharia de Sistemas e Tecnologias
+            Informáticas na Universidade do Algarve (Portugal). Essa base me deu fundamento
+            sólido em lógica, algoritmos, desenvolvimento de software e boas práticas.
+          </p>
+          <p>
+            No CIB Group (Faro, Portugal), desenvolvi pipelines de dados automatizados de
+            ponta a ponta, seguindo metodologia BPMN para modelar, agendar e implantar
+            processos. Foi um estágio ligado ao meu semestre acadêmico, concluído em maio de
+            2026. Antes disso, construí automações em Python (Selenium, PyAutoGUI, Power
+            Automate) integradas a sistemas corporativos via ODBC e APIs REST, e mantenho uma
+            base forte de backend em Java, Spring Boot e Python (Flask, SQLAlchemy). Também já
+            explorei visão computacional (OpenCV, YOLO) em projetos acadêmicos.
+          </p>
+          <div class="soft">
+            <span class="soft__label mono">// soft skills</span>
+            <ul class="chips chips--soft">
+              <li>Comunicação clara</li><li>Mapeamento de processos</li>
+              <li>Documentação técnica</li><li>Trabalho em equipe</li>
+              <li>Resolução de problemas</li><li>Autonomia</li><li>Vontade de aprender</li>
+            </ul>
+          </div>
+          <div class="sobre__signature">
+            <span class="mono">// disponível para oportunidades e projetos freelance</span>
+          </div>
+        </div>
+
+        <div class="sobre__stack reveal">
+          <div class="stack-group">
+            <h3 class="stack-group__title"><span class="mono">01</span> Backend</h3>
+            <ul class="chips">
+              <li>Java</li><li>Spring Boot</li><li>Python</li><li>Flask</li>
+              <li>SQLAlchemy</li><li>API REST</li><li>JPA / Hibernate</li>
+            </ul>
+          </div>
+          <div class="stack-group">
+            <h3 class="stack-group__title"><span class="mono">02</span> Automação &amp; RPA</h3>
+            <ul class="chips">
+              <li>Selenium</li><li>PyAutoGUI</li><li>Playwright</li>
+              <li>Power Automate</li><li>BPMN</li><li>ODBC</li>
+            </ul>
+          </div>
+          <div class="stack-group">
+            <h3 class="stack-group__title"><span class="mono">03</span> Dados &amp; Análise</h3>
+            <ul class="chips">
+              <li>MySQL</li><li>SQL</li><li>Pandas</li><li>Power BI</li>
+              <li>Data Analysis</li><li>Pipelines</li>
+            </ul>
+          </div>
+          <div class="stack-group">
+            <h3 class="stack-group__title"><span class="mono">04</span> Web &amp; DevOps</h3>
+            <ul class="chips">
+              <li>HTML5</li><li>CSS</li><li>JavaScript</li><li>WordPress</li>
+              <li>Git</li><li>AWS S3</li><li>Railway</li><li>Maven</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section class="section servicos" id="servicos">
+      <div class="section__head reveal">
+        <span class="section__idx">02 / Serviços</span>
+        <h2 class="section__title">Sites profissionais que<br />transmitem confiança e geram contato.</h2>
+        <p class="section__sub">
+          Além do backend, entrego produtos web completos para empresas e profissionais
+          liberais. Da arquitetura à publicação, com performance, SEO e captação de leads.
+        </p>
+      </div>
+
+      <div class="cards">
+        <article class="card reveal" data-tilt>
+          <span class="card__idx mono">S1</span>
+          <h3 class="card__title">Sites &amp; landing pages</h3>
+          <p>Front-end artesanal (HTML, CSS, JavaScript) ou WordPress sob medida, com código
+             limpo e manutenível, feito para durar.</p>
+        </article>
+        <article class="card reveal" data-tilt>
+          <span class="card__idx mono">S2</span>
+          <h3 class="card__title">Performance &amp; SEO local</h3>
+          <p>Imagens WebP, Core Web Vitals, dados estruturados (JSON-LD) e otimização para o
+             Google. Velocidade que converte.</p>
+        </article>
+        <article class="card reveal" data-tilt>
+          <span class="card__idx mono">S3</span>
+          <h3 class="card__title">Captação de leads</h3>
+          <p>CTA direto por WhatsApp, formulários e integrações. O visitante vira contato em
+             um clique, sem fricção.</p>
+        </article>
+        <article class="card reveal" data-tilt>
+          <span class="card__idx mono">S4</span>
+          <h3 class="card__title">Automação &amp; integrações</h3>
+          <p>Conecto o site a sistemas, planilhas e APIs. Uno a experiência web à minha base
+             de RPA e backend.</p>
+        </article>
+      </div>
+
+      <!-- Case de confiança -->
+      <article class="case reveal">
+        <div class="case__body">
+          <div class="case__tag mono">CASE REAL · SAÚDE</div>
+          <h3 class="case__title">Site da Dra. Vivian Campos</h3>
+          <p class="case__text">
+            Site institucional completo para uma médica: hero editorial, sobre, áreas de
+            atuação, cursos, blog e agendamento. Arquitetura de fonte estática espelhada em
+            tema WordPress sob medida, SEO local e dados estruturados, botão flutuante de
+            agendamento por WhatsApp e responsividade real, testada de celular a tablet e
+            desktop. A maturidade técnica desse projeto é a base que trago para cada novo site.
+          </p>
+          <ul class="case__stack">
+            <li>WordPress sob medida</li><li>SEO local</li><li>JSON-LD</li>
+            <li>WhatsApp deep link</li><li>GSAP + ScrollTrigger</li><li>Responsivo real</li>
+          </ul>
+          <a href="#contato" class="link-arrow" data-hover>
+            Quero um site assim
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+        <div class="case__frame">
+          <div class="case__browser">
+            <div class="case__bar">
+              <div class="case__dots"><span></span><span></span><span></span></div>
+              <div class="case__url mono">draviviancampos.com.br</div>
+              <a class="case__open" href="https://draviviancampos.com.br" target="_blank" rel="noopener" data-hover>abrir ↗</a>
+            </div>
+            <div class="case__embed">
+              <iframe src="https://draviviancampos.com.br" title="Site real da Dra. Vivian Campos" loading="lazy" scrolling="no" tabindex="-1"></iframe>
+              <a class="case__overlay" href="https://draviviancampos.com.br" target="_blank" rel="noopener" data-hover>
+                <span>Explorar site completo ↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- TRAJETÓRIA + PROJETOS -->
+    <section class="section trajetoria" id="trajetoria">
+      <div class="section__head reveal">
+        <span class="section__idx">03 / Trajetória</span>
+        <h2 class="section__title">Experiência &amp; projetos<br />que entregam resultado.</h2>
+      </div>
+
+      <ol class="timeline">
+        <li class="timeline__item reveal">
+          <div class="timeline__meta">
+            <span class="timeline__period mono">fev 2026 · mai 2026</span>
+            <span class="timeline__place">Faro, Portugal</span>
+          </div>
+          <div class="timeline__content">
+            <h3>Estagiário de Desenvolvimento <span class="at">· CIB Group</span></h3>
+            <p class="timeline__note">Estágio curricular ligado ao semestre acadêmico na Universidade do Algarve.</p>
+            <ul>
+              <li>Modelagem e implementação de pipeline de dados automatizado de ponta a ponta em Python, seguindo BPMN.</li>
+              <li>Extração diária de APIs públicas e datasets abertos (clima, voos), com agendamento e repetibilidade.</li>
+              <li>Arquitetura de armazenamento para construir datasets históricos estruturados e avaliação de escala em cloud (AWS, Azure).</li>
+            </ul>
+          </div>
+        </li>
+        <li class="timeline__item reveal">
+          <div class="timeline__meta">
+            <span class="timeline__period mono">mar 2024 · ago 2024</span>
+            <span class="timeline__place">Itajaí, SC</span>
+          </div>
+          <div class="timeline__content">
+            <h3>Desenvolvedor de RPA &amp; Analista de TI <span class="at">· Grupo Level</span></h3>
+            <ul>
+              <li>Automações em Python (Selenium, PyAutoGUI, ODBC) para o sistema Conexos Cloud, reduzindo tarefas manuais repetitivas.</li>
+              <li>Fluxos no Power Automate integrando sistemas internos e bancos de dados legados.</li>
+              <li>Administração de Active Directory no Windows Server e suporte técnico nível 1 e 2.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="timeline__item reveal">
+          <div class="timeline__meta">
+            <span class="timeline__period mono">jul 2023 · mar 2024</span>
+            <span class="timeline__place">Itajaí, SC</span>
+          </div>
+          <div class="timeline__content">
+            <h3>Estagiário de TI <span class="at">· IFSC</span></h3>
+            <ul>
+              <li>Ferramentas tecnológicas para automatizar e otimizar fluxos acadêmicos.</li>
+              <li>Documentação técnica e manuais adotados entre departamentos.</li>
+              <li>Suporte a docentes e estudantes, com melhoria contínua de processos.</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+
+      <h3 class="projetos__label reveal"><span class="mono">//</span> Formação acadêmica</h3>
+      <div class="edu">
+        <article class="edu__card reveal">
+          <span class="edu__period mono">set 2024 · mai 2027</span>
+          <h4>Engenharia de Sistemas e Tecnologias Informáticas</h4>
+          <span class="edu__inst">Universidade do Algarve · Faro, Portugal</span>
+        </article>
+        <article class="edu__card reveal">
+          <span class="edu__period mono">fev 2022 · fev 2024</span>
+          <h4>Ciência da Computação</h4>
+          <span class="edu__inst">UNIVALI · Itajaí, Brasil</span>
+        </article>
+        <article class="edu__card edu__card--certs reveal">
+          <span class="edu__period mono">certificações</span>
+          <ul class="edu__certs">
+            <li>Java com Spring Boot · Claro / DIO</li>
+            <li>NLW Journey Java · Rocketseat</li>
+            <li>Programação Orientada a Objetos em Java</li>
+          </ul>
+        </article>
+      </div>
+
+      <h3 class="projetos__label reveal"><span class="mono">//</span> Projetos no GitHub</h3>
+      <div class="projects">
+        <a class="project reveal" href="https://github.com/pedrodaguer/SavorLog" target="_blank" rel="noopener" data-tilt data-hover>
+          <div class="project__top">
+            <span class="project__num mono">P01</span>
+            <span class="project__type mono">FLUTTER · APP</span>
+          </div>
+          <h3 class="project__title">SavorLog</h3>
+          <p>Aplicativo mobile completo para registrar experiências de vinhos, cafés e
+             restaurantes, com leitura de código de barras e geolocalização.</p>
+          <ul class="project__tags"><li>Flutter</li><li>Dart</li><li>Mobile</li></ul>
+        </a>
+        <a class="project reveal" href="https://github.com/pedrodaguer/spring-security-jwt" target="_blank" rel="noopener" data-tilt data-hover>
+          <div class="project__top">
+            <span class="project__num mono">P02</span>
+            <span class="project__type mono">BACKEND · AUTH</span>
+          </div>
+          <h3 class="project__title">spring-security-jwt</h3>
+          <p>API REST com autenticação e autorização usando Spring Security e tokens JWT,
+             base reutilizável para projetos seguros.</p>
+          <ul class="project__tags"><li>Java</li><li>Spring Security</li><li>JWT</li></ul>
+        </a>
+        <a class="project reveal" href="https://github.com/pedrodaguer/websig-flask-api" target="_blank" rel="noopener" data-tilt data-hover>
+          <div class="project__top">
+            <span class="project__num mono">P03</span>
+            <span class="project__type mono">PYTHON · FLASK</span>
+          </div>
+          <h3 class="project__title">websig-flask-api</h3>
+          <p>Backend em Flask para uma aplicação de mapas interativos, com endpoints REST
+             servindo dados geográficos.</p>
+          <ul class="project__tags"><li>Python</li><li>Flask</li><li>API REST</li></ul>
+        </a>
+        <a class="project reveal" href="https://github.com/pedrodaguer/websig-interactive-maps" target="_blank" rel="noopener" data-tilt data-hover>
+          <div class="project__top">
+            <span class="project__num mono">P04</span>
+            <span class="project__type mono">WEB · DADOS</span>
+          </div>
+          <h3 class="project__title">websig-interactive-maps</h3>
+          <p>Mapa interativo do concelho de Faro para visualizar escolas e postos de
+             combustível. Projeto acadêmico de sistemas de informação geográfica.</p>
+          <ul class="project__tags"><li>JavaScript</li><li>GIS</li><li>Dados</li></ul>
+        </a>
+        <a class="project reveal" href="https://github.com/pedrodaguer/EncurtadorDeURL" target="_blank" rel="noopener" data-tilt data-hover>
+          <div class="project__top">
+            <span class="project__num mono">P05</span>
+            <span class="project__type mono">JAVA · AWS</span>
+          </div>
+          <h3 class="project__title">Encurtador de URL</h3>
+          <p>Serviço serverless de encurtamento de URLs em Java, com integração à AWS
+             (S3 e Lambda) para armazenamento e redirecionamento.</p>
+          <ul class="project__tags"><li>Java</li><li>AWS</li><li>Serverless</li></ul>
+        </a>
+        <a class="project reveal" href="https://github.com/pedrodaguer/flet-live-chat" target="_blank" rel="noopener" data-tilt data-hover>
+          <div class="project__top">
+            <span class="project__num mono">P06</span>
+            <span class="project__type mono">PYTHON · REALTIME</span>
+          </div>
+          <h3 class="project__title">flet-live-chat</h3>
+          <p>Chat em tempo real com mensagens privadas, compartilhamento de arquivos e
+             reações, construído em Python com Flet.</p>
+          <ul class="project__tags"><li>Python</li><li>Flet</li><li>WebSocket</li></ul>
+        </a>
+      </div>
+
+      <a class="gh-banner reveal" href="https://github.com/pedrodaguer" target="_blank" rel="noopener" data-hover>
+        <div class="gh-banner__left">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.2 11.4.6.11.82-.26.82-.58v-2c-3.34.72-4.04-1.6-4.04-1.6-.55-1.4-1.34-1.77-1.34-1.77-1.1-.75.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.84 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.95 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.62-2.81 5.64-5.49 5.94.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.56 22.3 24 17.8 24 12.5 24 5.87 18.63.5 12 .5Z"/></svg>
+          <div>
+            <strong>github.com/pedrodaguer</strong>
+            <span>Java, Python e projetos web. Novos repositórios com frequência.</span>
+          </div>
+        </div>
+        <span class="gh-banner__arrow">
+          Ver perfil completo
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </span>
+      </a>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="section contato" id="contato">
+      <div class="contato__grid">
+        <div class="contato__intro reveal">
+          <span class="section__idx">04 / Contato</span>
+          <h2 class="section__title">Vamos<br />conversar.</h2>
+          <p class="contato__paths">
+            <span class="contato__path">
+              <strong>Para recrutadores e empresas.</strong>
+              Estou aberto a oportunidades em backend, RPA e automação inteligente.
+            </span>
+            <span class="contato__path">
+              <strong>Para novos projetos web.</strong>
+              Precisa de um site profissional que gere contato? Me chame para um orçamento.
+            </span>
+          </p>
+          <div class="contato__links">
+            <a href="mailto:pedrodaguer.dev@gmail.com" data-hover>
+              <span class="mono">✉</span> pedrodaguer.dev@gmail.com
+            </a>
+            <a href="https://www.linkedin.com/in/pedrodaguer" target="_blank" rel="noopener" data-hover>
+              <span class="mono">in</span> linkedin.com/in/pedrodaguer
+            </a>
+            <a href="https://github.com/pedrodaguer" target="_blank" rel="noopener" data-hover>
+              <span class="mono">{ }</span> github.com/pedrodaguer
+            </a>
+          </div>
+        </div>
+
+        <form class="contato__form reveal" id="contactForm" novalidate>
+          <div class="field">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="voce@email.com" required />
+          </div>
+          <div class="field">
+            <label for="tipo">Sobre o que?</label>
+            <div class="select-wrap">
+              <select id="tipo" name="tipo">
+                <option value="Oportunidade de emprego">Oportunidade de emprego</option>
+                <option value="Orçamento de site">Orçamento de um site</option>
+                <option value="Automação / RPA">Automação / RPA</option>
+                <option value="Outro">Outro</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Conte um pouco sobre a ideia..." required></textarea>
+          </div>
+          <div class="contato__actions">
+            <button type="submit" class="btn btn--solid" data-hover>
+              Enviar pelo WhatsApp
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+            <button type="button" class="btn btn--ghost" id="mailBtn" data-hover>Enviar por email</button>
+          </div>
+          <p class="contato__note mono">Sem backend: o formulário abre a conversa já preenchida. Você só aperta enviar.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__top">
+      <a href="#hero" class="footer__brand" data-hover>Pedro Daguer</a>
+      <nav class="footer__nav">
+        <a href="#sobre" data-hover>Sobre</a>
+        <a href="#servicos" data-hover>Serviços</a>
+        <a href="#trajetoria" data-hover>Trajetória</a>
+        <a href="#contato" data-hover>Contato</a>
+      </nav>
+    </div>
+    <div class="footer__bottom">
+      <span class="mono">© <span id="year"></span> Pedro d'Ávila Daguer</span>
+      <span class="mono">Feito à mão com HTML, CSS e JavaScript.</span>
+    </div>
+  </footer>
+
+  <script src="js/app.js?v=2"></script>
+</body>
+</html>
